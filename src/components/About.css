@@ -1,0 +1,10 @@
+body{
+    background-color: #121A2D;
+}
+.myName{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    color: #C9D1DE;
+    margin: 25px 20px;
+    padding: 0;
+}

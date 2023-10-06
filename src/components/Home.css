@@ -1,0 +1,13 @@
+body{
+    /* background-color: #070B2B; */
+    background-image: url("sky.jpg");
+    background-size: cover;
+    /* height: 1%; */
+}
+.myName{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    color: #C9D1DE;
+    margin: 25px 20px;
+    padding: 0;
+}
