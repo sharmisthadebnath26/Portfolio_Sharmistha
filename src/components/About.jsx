@@ -3,8 +3,13 @@ import { useState } from 'react'
 import { Box, Button } from '@mui/material'
 import './About.css'
 import Self from './self.png';
+import MediaQuery from 'react-responsive'
+
+
 
 export default function () {
+
+    //hover effect
     const [hover, setHover] = useState(true);
     const [hoverUnderline2, setHoverUnderline2] = useState(true);
     const [hover1, setHover2] = useState(true);
@@ -26,9 +31,14 @@ export default function () {
     const handleHoverLeft2 = () => {
         setHover2(true);
     }
+
+    //responsive
+    
+
   return (
     <>
-     <Box style={{display:'flex', justifyContent:'space-between'}}>
+    <MediaQuery minWidth={1472}>
+    <Box style={{display:'flex', justifyContent:'space-between'}}>
         <Box>
             <h2 className='myName'>Sharmistha Debnath</h2>
         </Box> 
@@ -62,8 +72,13 @@ export default function () {
         style={hover1 ? {color:"#070B2B", background:'#ffffff', margin:'25px auto'} : {borderColor:'#ffffff', color:'#ffffff', margin:'25px auto'}}>
         Github Profile
         </Button></a>
-            </Box>
         </Box>
+        </Box>
+    </MediaQuery>
+    <MediaQuery minWidth={1224}>
+
+    </MediaQuery>
+     
         
         
     </>
