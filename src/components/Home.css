@@ -3,6 +3,7 @@ body{
     background-image: url("sky.jpg");
     background-size: cover;
     /* height: 1%; */
+    max-height: 150vh;
 }
 .myName{
     font-family: 'Chakra Petch', sans-serif;
