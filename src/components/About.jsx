@@ -213,7 +213,7 @@ export default function () {
         </Button></a>
         </Box>
     </MediaQuery>
-    <MediaQuery minWidth={270} maxWidth={320} >
+    <MediaQuery minWidth={270} maxWidth={319} >
     <Box style={{display:'flex', justifyContent:'space-between', maxHeight:'100px'}}>
         <Box>
             <h2 className='myName'>Sharmistha Debnath</h2>

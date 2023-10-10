@@ -99,7 +99,8 @@ export default function Home() {
         <CloseIcon onClick={closeNavbar} style={bar ? {display:'none'} : {float:'right', color:'#121A2D', margin:'10px'}}/>
         <Box style={bar ? {display:'none', padding:'10px'} : {display:'flex', flexDirection:'column', padding:'10px'}}>
             <Box style={{margin:'30px 10px 10px 5px'}}>
-                <a style={{textDecoration:'underline', color:'#121A2D'}}>ABOUT</a>
+            <a onMouseEnter={handleHoverUnderline1} onMouseLeave={handleHoverUnderlineLeft1} href='#' 
+                style={hoverUnderline1 ? {textDecoration:'none', color:'#121A2D'} : {textDecoration:'underline', color:'#121A2D'}}>ABOUT</a>
             </Box>
             <Box style={{margin:'20px 10px'}}>
                 <a onMouseEnter={handleHoverUnderline2} onMouseLeave={handleHoverUnderlineLeft2} href='#' 
@@ -127,7 +128,7 @@ export default function Home() {
     </div>
         </MediaQuery>
         
-        <MediaQuery minWidth={280} maxWidth={320} >
+        <MediaQuery minWidth={280} maxWidth={319} >
     <Box style={{display:'flex', justifyContent:'space-between', maxHeight:'100px'}}>
         <Box>
             <h2 className='myName'>Sharmistha Debnath</h2>
@@ -138,7 +139,8 @@ export default function Home() {
         <CloseIcon onClick={closeNavbar} style={bar ? {display:'none'} : {float:'right', color:'#121A2D', margin:'10px'}}/>
         <Box style={bar ? {display:'none', padding:'10px'} : {display:'flex', flexDirection:'column', padding:'10px'}}>
             <Box style={{margin:'30px 10px 10px 5px'}}>
-                <a style={{textDecoration:'underline', color:'#121A2D'}}>ABOUT</a>
+            <a onMouseEnter={handleHoverUnderline1} onMouseLeave={handleHoverUnderlineLeft1} href='#' 
+                style={hoverUnderline1 ? {textDecoration:'none', color:'#121A2D'} : {textDecoration:'underline', color:'#121A2D'}}>ABOUT</a>
             </Box>
             <Box style={{margin:'20px 10px'}}>
                 <a onMouseEnter={handleHoverUnderline2} onMouseLeave={handleHoverUnderlineLeft2} href='#' 
