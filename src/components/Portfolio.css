@@ -1,10 +1,6 @@
 body{
-    /* background-color: #070B2B; */
-    background-image: url("nightSky.jpg");
-    /* background-size: cover; */
-    height: 100%;
-    width: 100%;
-}
+    background: rgb(153,68,133);
+background: linear-gradient(159deg, rgba(153,68,133,1) 0%, rgba(142,55,160,0.81) 14%, rgba(196,150,215,0.78) 88%, rgba(210,187,216,0.67) 95%, rgba(244, 241, 214, 0.788) 100%);}
 .myName{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 30px;
@@ -17,4 +13,11 @@ body{
     color: white;
     font-size: 70px;
     text-align: center;
+    /* color: rgba(238, 231, 222, 49%); */
+}
+.codepen, .textutils{
+    background-color: rgba(255, 255, 255, 12%);
+}
+.photoweb, .calculator{
+    background-color: rgba(188, 238, 242, 12%);
 }

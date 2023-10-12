@@ -4,10 +4,19 @@ import './Portfolio.css'
 import MediaQuery from 'react-responsive'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Image from './codepen.png';
+import Textutils from './textutils.png';
+import photoweb from './photeweb.png';
+import calculator from './calculator.png';
+
 
 export default function Portfolio() {
-  const [hover, setHover] = useState(true);
+    const [hover, setHover] = useState(true);
     const [hoverUnderline1, setHoverUnderline1] = useState(true);
+    const [hoverLink1, setHoverLink1] = useState(true);
+    const [hoverLink2, setHoverLink2] = useState(true);
+    const [hoverLink3, setHoverLink3] = useState(true);
+    const [hoverLink4, setHoverLink4] = useState(true);
 
     //responsive
     const [bar, setbar] = useState(true);
@@ -25,6 +34,30 @@ export default function Portfolio() {
     }
     const handleHoverUnderlineLeft1 = () => {
         setHoverUnderline1(true);
+    }
+    const enlarge = () => {
+        setHoverLink1(false);
+    }
+    const normal = () => {
+        setHoverLink1(true);
+    }
+    const enlarge2 = () => {
+        setHoverLink2(false);
+    }
+    const normal2 = () => {
+        setHoverLink2(true);
+    }
+    const enlarge3 = () => {
+        setHoverLink3(false);
+    }
+    const normal3 = () => {
+        setHoverLink3(true);
+    }
+    const enlarge4 = () => {
+        setHoverLink4(false);
+    }
+    const normal4 = () => {
+        setHoverLink4(true);
     }
 
     //responsive
@@ -63,6 +96,53 @@ export default function Portfolio() {
         <Box>
         <h2 className='projects'>PROJECTS</h2>
         </Box>
+        <div style={{display:'flex', justifyContent:'center', marginBottom:'20px'}}>
+            <div className='codepen' style={{padding:'20px', borderRadius:'5px', marginRight:'20px'}}>
+                <img src={Image} style={{width:'500px'}}/><br/>
+                <div style={{display:'flex', justifyContent:'space-between'}}>
+                <p style={{color:'#ffffff'}}>August 2023</p>
+                <p style={{color:'#ffffff'}}>ReactJs · useContext Hooks</p>
+                </div>
+                <a onMouseEnter={enlarge} onMouseLeave={normal} href='https://sharmisthadebnath26.github.io/CodePen-clone/' 
+                style={hoverLink1 ? {fontSize:'25px', color:'#121A2D', fontWeight:'bolder'} : {fontSize:'26px', color:'#121A2D', fontWeight:'bolder'}} 
+                target='_blank' title='Visit Site'>CodePen Clone</a>
+                
+            </div>
+            <div className='textutils' style={{padding:'20px', borderRadius:'5px', marginLeft:'20px'}}>
+                <img src={Textutils} style={{width:'500px'}} />
+                <div style={{display:'flex', justifyContent:'space-between'}}>
+                <p style={{color:'#ffffff'}}>September 2022 - October 2022</p>
+                <p style={{color:'#ffffff'}}>ReactJs</p>
+                </div>
+                <a onMouseEnter={enlarge2} onMouseLeave={normal2} href='https://sharmisthadebnath26.github.io/Text-utils/' 
+                style={hoverLink2 ? {fontSize:'25px', color:'#121A2D', fontWeight:'bolder'} : {fontSize:'26px', color:'#121A2D', fontWeight:'bolder'}} 
+                target='_blank' title='Visit Site'>TextUtils</a>
+            </div>
+        </div>
+
+        <div style={{display:'flex', justifyContent:'center', margin:'20px 0'}}>
+            <div className='photoweb' style={{padding:'20px', borderRadius:'5px', marginRight:'20px'}}>
+                <img src={photoweb} style={{width:'500px'}}/><br/>
+                <div style={{display:'flex', justifyContent:'space-between'}}>
+                <p style={{color:'#ffffff'}}>October 2022 - November 2022</p>
+                <p style={{color:'#ffffff'}}>Bootstrap Framework</p>
+                </div>
+                <a onMouseEnter={enlarge3} onMouseLeave={normal3} href='https://sharmisthadebnath26.github.io/E-commerce-Photography-website/' 
+                style={hoverLink3 ? {fontSize:'25px', color:'#121A2D', fontWeight:'bolder'} : {fontSize:'26px', color:'#121A2D', fontWeight:'bolder'}} 
+                target='_blank' title='Visit Site'>E-commerce Photography Website</a>
+                
+            </div>
+            <div className='calculator' style={{padding:'20px', borderRadius:'5px', marginLeft:'20px'}}>
+                <img src={calculator} style={{width:'500px'}} />
+                <div style={{display:'flex', justifyContent:'space-between'}}>
+                <p style={{color:'#ffffff'}}>October 2022</p>
+                <p style={{color:'#ffffff'}}>HTML5, CSS3, JavaScript</p>
+                </div>
+                <a onMouseEnter={enlarge4} onMouseLeave={normal4} href='https://sharmisthadebnath26.github.io/Calculator/' 
+                style={hoverLink4 ? {fontSize:'25px', color:'#121A2D', fontWeight:'bolder'} : {fontSize:'26px', color:'#121A2D', fontWeight:'bolder'}} 
+                target='_blank' title='Visit Site'>Calculator</a>
+            </div>
+        </div>
     </MediaQuery>
         
 
