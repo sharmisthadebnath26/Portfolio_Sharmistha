@@ -1,6 +1,6 @@
 body{
-    background: rgb(153,68,133);
-background: linear-gradient(159deg, rgba(153,68,133,1) 0%, rgba(142,55,160,0.81) 14%, rgba(196,150,215,0.78) 88%, rgba(210,187,216,0.67) 95%, rgba(244, 241, 214, 0.788) 100%);}
+    background: #2E3445;
+}
 .myName{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 30px;
@@ -13,6 +13,7 @@ background: linear-gradient(159deg, rgba(153,68,133,1) 0%, rgba(142,55,160,0.81)
     color: white;
     font-size: 70px;
     text-align: center;
+    margin: 25px;
     /* color: rgba(238, 231, 222, 49%); */
 }
 .codepen, .textutils{
