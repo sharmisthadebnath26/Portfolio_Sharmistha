@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Button } from '@mui/material'
-import './Portfolio.css'
+import './Project.css'
 import MediaQuery from 'react-responsive'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
